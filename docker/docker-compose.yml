@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  api-sync-service:
+    build: .
+    env_file: .env
+    depends_on:
+      - mock-api
+  mock-api:
+    image: jsonplaceholder/jsonplaceholder
+    ports:
+      - "8080:80"

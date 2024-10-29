@@ -1,0 +1,7 @@
+api:
+  source:
+    url: ${SOURCE_API_URL}
+  target:
+    url: ${TARGET_API_URL}
+sync:
+  interval: ${SYNC_INTERVAL}
